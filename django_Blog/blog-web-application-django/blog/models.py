@@ -9,4 +9,6 @@ class Blogs(models.Model):
     description=models.TextField(null=True)
     date=models.DateField(auto_now_add=True,null=True)
     likes=models.IntegerField(default=0)
-
+    def __str__(self):
+        return str(self.title)
+ 
